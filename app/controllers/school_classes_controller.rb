@@ -5,7 +5,8 @@ class SchoolClassesController < ApplicationController
   end
 
   def create
-
+    @schoolclass = SchoolClass.new
+    redirect_to school_class_path(@schoolclass)
   end
 
   def show
