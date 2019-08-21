@@ -117,3 +117,20 @@ Processing by StudentsController#new as HTML
 Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/students/new" for 24.171.123.85 at 2019-08-21 02:35:29 +0000
+Processing by StudentsController#new as HTML
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/students" for 24.171.123.85 at 2019-08-21 02:35:39 +0000
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TMmMN/kKx5xcAN7owP28SaBxAHEnOfIr+GzuiNk2p6vCPZcSGoqOMLca90iO/5TbvbEtk7gN2Tpl4zWOxRcmVg==", "student"=>{"first_name"=>"indre", "last_name"=>"Bakeer"}, "commit"=>"Create Student"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "indre"], ["last_name", "Bakeer"], ["created_at", "2019-08-21 02:35:39.190172"], ["updated_at", "2019-08-21 02:35:39.190172"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://159.203.187.180:49470/students/3
+Completed 302 Found in 12ms (ActiveRecord: 4.0ms)
+
+
