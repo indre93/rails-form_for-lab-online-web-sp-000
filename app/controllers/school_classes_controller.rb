@@ -20,4 +20,10 @@ class SchoolClassesController < ApplicationController
 
   end
 
+  private
+
+  def post_params(*args)
+    params.require(:student).permit(*args)
+  end
+
 end
