@@ -134,3 +134,12 @@ Redirected to http://159.203.187.180:49470/students/3
 Completed 302 Found in 12ms (ActiveRecord: 4.0ms)
 
 
+Started GET "/students/3" for 24.171.123.85 at 2019-08-21 02:35:40 +0000
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 59ms (Views: 53.2ms | ActiveRecord: 0.6ms)
+
+
